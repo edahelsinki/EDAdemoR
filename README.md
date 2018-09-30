@@ -23,5 +23,9 @@ The actual data analysis functions are stored in `R/demoR/demoR.R`. Here, the id
 
 It would be easy to add more interactions, more sophisticated visualizations or summarizations of the data etc. An advantage of this template is that if you know how to do your system in R Shiny (when used like this) provides a very easy way to provide a fluid HTML5 user interface for your application.
 
+Dataset used (`R/demoR/server/bnc.rds`): British National Corpus, bag of representation of 1335 documents of four genres (conversation, fiction, broadsheet newspaper, academic). See Puolamäki et al. (2017) (<https://arxiv.org/abs/1710.08167>) for more information about the dataset used.
+
 Kai Puolamäki  
 30 September 2018
+
+“The British National Corpus, v. 3 (BNC XML Edition),” Distributed by Oxford University Computing Services on behalf of the BNC.
