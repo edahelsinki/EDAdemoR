@@ -42,6 +42,7 @@ shinyServer(function(input,output,session) {
   })
   
   observeEvent(input$recompute,{
+    cat("server.R: computing PCA.\n")
     a <- dopca(if(length(current$s)>1) data$r[current$s,] else data$r)
     current$w <<- a$w
     current$v <<- a$v
