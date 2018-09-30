@@ -13,7 +13,9 @@ There are lots of example applications of Shiny for other purposes, I just could
 
 ## Quick start
 
-There is simple script at `R/run.R`, which launches a local Shiny app, after which you should be able to point your web browser to <http://127.0.0.1:7000>. It is for one user only!
+Requirements: recent version of [R](https://www.r-project.org/) and [Shiny](https://cran.r-project.org/web/packages/shiny/index.html), installed from CRAN.
+
+There is simple script at `R/run.R`, which launches a local Shiny app, after which you should be able to point your web browser to <http://127.0.0.1:7000>. It is for one user only! You can either type Make in `R`or say `Rscript --vanilla run.R`.
 
 The actual logic is contained under `R/demoR`. The script reads R data frame saved using `saveRDS` from the first rds file in directory `R/demoR/data`. Reading of the data and other initializations are in `R/demoR/global.R`.
 
