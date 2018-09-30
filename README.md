@@ -1,6 +1,6 @@
 # Shiny example of explorative data analysis
 
-This is a small demonstration of how to use R and Shiny for explorative data analysis using a fluid HTML5 based web browser interface.
+This is a small demonstration of how to use R and Shiny for explorative data analysis using a fluid HTML5 based web browser interface. This system can be used as a skeleton for implementing interactions on more complex models. 
 
 This is not supposed to be a full application, but it should contain all components that you need to make the UI and server parts working. Examples of more complete applications:
 
