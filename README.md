@@ -28,7 +28,7 @@ It would be easy to add more interactions, more sophisticated visualizations or 
 
 ## Default dataset 
 
-The dataset at (`R/demoR/server/bnc.rds`) contains 1335 documents from the British National Corpus in bag words of representation from four genres (conversation, fiction, broadsheet newspaper, academic). See Puolamäki et al. (2017) for more information about the dataset and preprocessing used.
+The dataset at `R/demoR/server/bnc.rds` contains 1335 documents from the British National Corpus in bag words of representation from four genres (conversation, fiction, broadsheet newspaper, academic). See Puolamäki et al. (2017) for more information about the dataset and preprocessing used.
 
 Kai Puolamäki, Emilia Oikarinen, Bo Kang, Jefrey Lijffijt, Tijl De Bie. Interactive Visual Data Exploration with Subjective Feedback: An Information-Theoretic Approach. 2017. [arXiv:1710.08167](https://arxiv.org/abs/1710.08167) [stat.ML]
 
