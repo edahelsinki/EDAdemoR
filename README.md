@@ -1,4 +1,4 @@
-# Shiny demo for explorative data analysis
+# Shiny example of explorative data analysis
 
 This is a small demonstration of how to use R and Shiny for explorative data analysis using a fluid HTML5 based web browser interface.
 
