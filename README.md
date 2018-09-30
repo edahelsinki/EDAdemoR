@@ -17,7 +17,7 @@ Requirements: a recent version of [R](https://www.r-project.org/) and [Shiny](ht
 
 There is simple script at `R/run.R`, which launches a local Shiny app, after which you should be able to point your web browser to <http://127.0.0.1:7000>. It is for one user only! You can either type Make in `R`or say `Rscript --vanilla run.R`.
 
-The actual logic is contained under `R/demoR`. The script reads R data frame saved using `saveRDS` from the first rds file in directory `R/demoR/data`. Reading of the data and other initializations are in `R/demoR/global.R`.
+The actual logic is contained under `R/demoR`. The script reads R data frame saved using [`saveRDS`](https://www.rdocumentation.org/packages/base/versions/3.5.1/topics/readRDS) from the first rds file in directory `R/demoR/data`. Reading of the data and other initializations are in `R/demoR/global.R`.
 
 `R/demoR/ui.R`contains the UI components and `R/demoR/server.R` the server logic. The philosophy in the latter file is that by doing interactions (e.g., pressing buttons, choosing menu items, brushing plots) may change the state stored in variable `current`. In `R/demoR/server.R`, there is a `updateall` function which updates all visual presentations. This function should not do any heavy computations.
 
