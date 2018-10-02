@@ -36,6 +36,11 @@ shinyServer(function(input,output,session) {
                               s$ymin<=xy[,2] & xy[,2]<=s$ymax))
     updateall()
   })
+
+  observeEvent(input$selectpoints,{
+    if(input$selectpoints!="none") current$s <<- union(current$s,data$s[[input$selectpoints]])
+    updateall()
+  })
   
   observeEvent(input$clearselection,{
     current$s <<- c()

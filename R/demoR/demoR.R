@@ -17,18 +17,21 @@ plotdata <- function(data,current) {
   v <- current$v[1:2]  # Projection costs
   xy <- data$r %*% w
   idx <- 1:dim(xy)[1] %in% current$s
-  pch <- 0:(length(levels(data$f[[1]]))-1)
+  if(length(data$f)>0) {
+      pch <- 0:(length(levels(data$f[[1]]))-1)
+      pchs <- pch[data$f[[1]]]
+  } else {
+      pch <- pchs <- 0
+  }
   plot(xy,
        col=ifelse(idx,"red","black"),
-       pch=pch[data$f[[1]]],
+       pch=pchs,
        bty="n",
        xlab=sprintf("PC1[%.2g] = %s",
                     v[1],largestdim(w[,1],names=colnames(data$r))),
        ylab=sprintf("PC2[%.2g] = %s",
                     v[2],largestdim(w[,2],names=colnames(data$r))))
-  legend("topright",
-         legend=levels(data$f[[1]]),
-         pch=pch)
+  if(length(data$f)>0) legend("topright",legend=levels(data$f[[1]]),pch=pch)
 }
 
 #' Makes a character string of a numeric vector
@@ -49,10 +52,13 @@ preprocess <- function(origdata) {
   ## subsets are the factors
   fn <- colnames(origdata)[sapply(origdata,is.factor)]
   if(length(fn)>0) {
-    f <- lapply(fn,function(s) origdata[,s])
-    names(f) <- fn
+      f <- lapply(fn,function(i) origdata[,i])
+      names(f) <- fn
+      s <- sapply(levels(f[[1]]),function(j) which(f[[1]]==j))
+      names(s) <- levels(f[[1]])
   } else {
-    f <- list()
+      f <- list()
+      s <- list(all=1:dim(r)[1])
   }
-  list(r=r,f=f)
+  list(r=r,f=f,s=s)
 }
