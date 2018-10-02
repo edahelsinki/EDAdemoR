@@ -12,7 +12,8 @@ shinyUI(fluidPage(
       htmlOutput("datadescr"),
       actionButton("clearselection",label="clear current selection"),
       actionButton("reverseselection",label="reverse current selection"),
-      actionButton("recompute",label="recompute projection")
+      actionButton("recompute",label="recompute projection"),
+      HTML("<p>See <a href=\"https://github.com/edahelsinki/EDAdemoR\">https://github.com/edahelsinki/EDAdemoR</a> for more information.</p>")  
     ),
     mainPanel(
       plotOutput("plot",brush=brushOpts(id="sel1"),click="plot_click")
