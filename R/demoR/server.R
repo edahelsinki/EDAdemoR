@@ -7,6 +7,7 @@ require("shiny")
 ## The data is in the following variables:
 ## data$r real matrix
 ## data$f list of factors
+## data$s subsets extracted from the first factor
 ## The state that may vary is collected to current as follows:
 ##  current$s the current subset
 ##  current$w information about the current projection
