@@ -16,10 +16,10 @@ There are lots of example applications of Shiny for other purposes, I just could
 Requirements:
 
 * A recent version of [R](https://www.r-project.org/).
-* [Shiny](https://cran.r-project.org/web/packages/shiny/index.html), which can [installed from CRAN](https://www.dummies.com/programming/r/how-to-install-and-load-cran-packages-in-r/).
+* [Shiny](https://cran.r-project.org/web/packages/shiny/index.html), which can be [installed from CRAN](https://www.dummies.com/programming/r/how-to-install-and-load-cran-packages-in-r/).
 * A modern web browser such as Google Chrome.
 
-There is simple script at [`R/run.R`](https://github.com/edahelsinki/EDAdemoR/blob/master/R/run.R), which launches a local Shiny app, after which you should be able to point your web browser to <http://127.0.0.1:7000>. It is for one user only! You can either type Make in directory [`R`](https://github.com/edahelsinki/EDAdemoR/tree/master/R) or say `Rscript --vanilla run.R` in the same directory.
+There is simple script at [`R/run.R`](https://github.com/edahelsinki/EDAdemoR/blob/master/R/run.R), which launches a local Shiny app, after which you should be able to point your web browser to <http://127.0.0.1:7000>. It is for one user only&#8212;you can test what happens if many use it simultaneously! You can either type Make in directory [`R`](https://github.com/edahelsinki/EDAdemoR/tree/master/R) or say `Rscript --vanilla run.R` in the same directory.
 
 The actual logic is contained under [`R/demoR`](https://github.com/edahelsinki/EDAdemoR/tree/master/R/demoR). The script reads R data frame saved using [`saveRDS`](https://www.rdocumentation.org/packages/base/versions/3.5.1/topics/readRDS) from the first rds file in directory [`R/demoR/data`](https://github.com/edahelsinki/EDAdemoR/tree/master/R/demoR/data). Reading of the data and other initializations are in [`R/demoR/global.R`](https://github.com/edahelsinki/EDAdemoR/blob/master/R/demoR/global.R).
 
