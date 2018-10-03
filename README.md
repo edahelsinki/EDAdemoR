@@ -9,7 +9,7 @@ This is not supposed to be a full application, but it should contain all compone
 
 For more in-depth introduction to Shiny see <https://shiny.rstudio.com/>. 
 
-There are lots of example applications of Shiny for other purposes, I just could not find anything to do what I want.
+There are lots of example applications of Shiny for other purposes, I just could not find anything to do what I want, i.e., way to add fluid HTML5 interaction to R with minimal extra hassle.
 
 ## Quick start
 
